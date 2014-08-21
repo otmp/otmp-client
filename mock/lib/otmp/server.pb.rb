@@ -7,25 +7,25 @@ require 'protobuf/message'
 ##
 # Message Classes
 #
-class ConnectResp < ::Protobuf::Message; end
-class ForceDisconnect < ::Protobuf::Message; end
-class ServerEgressChatMsg < ::Protobuf::Message; end
+class Connect_resp < ::Protobuf::Message; end
+class Force_disconnect < ::Protobuf::Message; end
+class Server_egress_chat_msg < ::Protobuf::Message; end
 
 
 ##
 # Message Fields
 #
-class ConnectResp
+class Connect_resp
   required :bool, :success, 1
   optional :string, :sessionid, 2
 end
 
-class ForceDisconnect
+class Force_disconnect
   required :string, :sessionid, 1
   optional :string, :msg, 2
 end
 
-class ServerEgressChatMsg
+class Server_egress_chat_msg
   required :string, :username, 1
   required :string, :msg, 2
 end

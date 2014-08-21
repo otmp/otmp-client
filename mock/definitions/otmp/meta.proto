@@ -1,0 +1,17 @@
+message meta {
+  enum msgtype {
+    META                   = 0;
+    PING                   = 1;
+    PONG                   = 2;
+    CONNECT                = 3;
+    DISCONNECT             = 4;
+    CONNECT_RESP           = 5;
+    FORCE_DISCONNECT       = 6;
+    CLIENT_EGRESS_CHAT_MSG = 7;
+    SERVER_EGRESS_CHAT_MSG = 8;
+  }
+  required msgtype type = 1;
+  required bytes   msg  = 2;
+}
+
+

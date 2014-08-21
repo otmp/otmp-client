@@ -9,7 +9,7 @@ require 'protobuf/message'
 #
 class Connect < ::Protobuf::Message; end
 class Disconnect < ::Protobuf::Message; end
-class ClientEgressChatMsg < ::Protobuf::Message; end
+class Client_egress_chat_msg < ::Protobuf::Message; end
 
 
 ##
@@ -24,7 +24,7 @@ class Disconnect
   required :string, :sessionid, 1
 end
 
-class ClientEgressChatMsg
+class Client_egress_chat_msg
   required :string, :sessionid, 1
   required :string, :msg, 2
 end
